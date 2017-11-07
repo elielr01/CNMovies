@@ -15,7 +15,13 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'id',
+        'firstname',
+        'lastname',
+        'email',
+        'username',
+        'password',
+        'type'
     ];
 
     /**
@@ -26,4 +32,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function isCustomer(){
+        return $this->type == "Customer";
+    }
+
+    public function isAdmin(){
+        return $this->type == "Admin";
+    }
 }
