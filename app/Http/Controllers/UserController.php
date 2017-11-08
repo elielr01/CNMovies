@@ -36,8 +36,8 @@ class UserController extends Controller
         $user->firstname = $request->firstname;
         $user->lastname = $request->lastname;
         $user->email = $request->email;
-        $user->username = $request->username;
-        $user->password = bcrypt($request->password);
+        $user->username = $request->username_signup;
+        $user->password = bcrypt($request->password_signup);
         $user->type = "Customer";
         $user->save();
 

@@ -46,12 +46,20 @@ body {
     background-color: #3A7CA5;
 }
 
-/* Nav Form Text */
-.navbar-default .navbar-form {
-    color: #d9dcd6;
+#login-dropdown-menu{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,1);
 }
 
-.btn-nav {
-    padding-left: 4px;
+#login-div {
+    margin-bottom: 5px;
 }
+
+#login-div label{
+    color: #16425B;
+}
+
+
 /**********************************************************************************************************************/

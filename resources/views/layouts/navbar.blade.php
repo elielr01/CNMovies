@@ -84,23 +84,33 @@
 
             @else
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <form method="POST" action="{{ route('login') }}" class="navbar-form navbar-right" >
-                            {{ csrf_field() }}
-                            <div class="form-group">
-                                Username
-                                <input type="text" name="username" class="form-control" placeholder="Username">
-                                Password
-                                <input type="password" name="password" class="form-control" placeholder="Password">
-                            </div>
-                            <button type="submit" class="btn btn-default">Login</button>
-                        </form>
+                    <li class="dropdown" id="login-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false">
+                            Login
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" id="login-dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12" id="login-div">
+                                        <form method="POST" action="{{ route('login') }}">
+                                            {{ csrf_field() }}
+                                            <div class="form-group">
+                                                <label for="username-field">Username</label>
+                                                <input type="text" id="username-field" name="username" class="form-control" placeholder="Username">
+
+                                                <label for="password-field">Password</label>
+                                                <input type="password" id="password-field" name="password" class="form-control" placeholder="Password">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary pull-right">Login</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <div class="btn-nav">
-                            <a href="/signup" class="btn btn-default navbar-btn">Sign up</a>
-                        </div>
-                    </li>
+                    <li><a href="/signup">Sign up</a></li>
 
                 </ul>
 

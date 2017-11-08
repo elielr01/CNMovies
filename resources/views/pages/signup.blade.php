@@ -35,10 +35,10 @@
                     <div class="col-md-6" id="right-column">
                         <div class="form-group">
                             <label for="username-field">Username</label>
-                            <input id="username-field" name="username" class="form-control input-lg" type="text" placeholder="jlozano" />
+                            <input id="username-field" name="username_signup" class="form-control input-lg" type="text" placeholder="jlozano" />
 
                             <label for="password-field">Password</label>
-                            <input id="password-field" name="password" class="form-control input-lg" type="password" placeholder="Abcd.123" />
+                            <input id="password-field" name="password_signup" class="form-control input-lg" type="password" placeholder="Abcd.123" />
 
                             <label for="confirm-password-field">Confirm Password</label>
                             <input id="confirm-password-field" name="confirm-password" class="form-control input-lg" type="password" placeholder="Abcd.123" />
