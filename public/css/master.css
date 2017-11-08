@@ -1,0 +1,57 @@
+body {
+    background-color: #81C3D7;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+/***********************************************************************************************************************
+
+ NAVBAR STYLE
+
+***********************************************************************************************************************/
+
+.navbar-default {
+    background-color: #16425B;
+}
+
+/* Navbar Title */
+.navbar-default .navbar-brand {
+    color: #d9dcd6;
+    font-size: 175%;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #3A7CA5;
+}
+
+/* Menu Items */
+.navbar-default .navbar-nav > li > a{
+    color: #D9DCD6;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #3A7CA5;
+}
+
+
+/* Drop down Menu */
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #16425B;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #D9DCD6;
+    background-color: #3A7CA5;
+}
+
+/* Nav Form Text */
+.navbar-default .navbar-form {
+    color: #d9dcd6;
+}
+
+/**********************************************************************************************************************/

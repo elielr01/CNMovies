@@ -33,11 +33,26 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    public function isAdmin(){
+        return $this->type == "Admin";
+    }
+
     public function isCustomer(){
         return $this->type == "Customer";
     }
 
-    public function isAdmin(){
-        return $this->type == "Admin";
+    public function userChild()
+    {
+        if ($this->type == 'Admin') {
+
+            return $this->hasOne('App\Admin', 'admin_id', 'id');
+        }
+
+        if ($this->type == 'Customer') {
+            // exactly the same as the admin's one, the 3th argument is the default one
+            return $this->hasOne('App\Customer', 'customer_id');
+        }
+
+        return false;
     }
 }

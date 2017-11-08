@@ -11,6 +11,30 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'HomeController@index');
+
+
+Route::get('/signup', function(){
+   return view('pages.homepage');
 });
+
+//Login
+Route::get('/login', 'Auth\LoginController@showLoginForm');
+Route::post('/login', 'Auth\LoginController@login')->name('login');
+//----------------------------------------------------------------------------------------------------------------------
+
+//Logout
+Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
+//----------------------------------------------------------------------------------------------------------------------
+
+
+
+//User routes
+Route::get('/user', 'UserController@index');
+
+
+//Admin routes
+Route::get('/admin/home', 'AdminController@index');
+
+//Customer routes
+Route::get('/customer/home', 'CustomerController@index');
