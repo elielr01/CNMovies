@@ -14,9 +14,10 @@
 Route::get('/', 'HomeController@index');
 
 
-Route::get('/signup', function(){
-   return view('pages.homepage');
-});
+Route::get('/signup', 'UserController@showSignUpForm');
+Route::post('/signup', 'UserController@signUp')->name('signup');
+
+
 
 //Login
 Route::get('/login', 'Auth\LoginController@showLoginForm');

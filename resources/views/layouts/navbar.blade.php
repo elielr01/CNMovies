@@ -83,85 +83,29 @@
                 @endif
 
             @else
-                <form method="POST" action="{{ route('login') }}" class="navbar-form navbar-right" >
-                    {{ csrf_field() }}
-                    <div class="form-group">
-                        Username
-                        <input type="text" name="username" class="form-control" placeholder="Username">
-                        Password
-                        <input type="password" name="password" class="form-control" placeholder="Password">
-                    </div>
-                    <button type="submit" class="btn btn-default">Login</button>
-                    <a href="/signup" class="btn btn-default">Sign up</a>
-                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form method="POST" action="{{ route('login') }}" class="navbar-form navbar-right" >
+                            {{ csrf_field() }}
+                            <div class="form-group">
+                                Username
+                                <input type="text" name="username" class="form-control" placeholder="Username">
+                                Password
+                                <input type="password" name="password" class="form-control" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-default">Login</button>
+                        </form>
+                    </li>
+                    <li>
+                        <div class="btn-nav">
+                            <a href="/signup" class="btn btn-default navbar-btn">Sign up</a>
+                        </div>
+                    </li>
+
+                </ul>
+
             @endif
 
-            <!--
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-            -->
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-
-
-
-<!--
-<nav class="navbar navbar-default navbar-fixed-top">
-
-    <a class="navbar-brand" href="#">CNMovies</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-    </div>
-
-    <!--
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">CNMovies</a>
-
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li ><a href="/adminWatch">Ver clientes</a></li>
-                <li ><a href="/adminAddCustomer">Nuevo Cliente</a></li>
-                <li><a href="/adminAddConsultant">Nuevo Consultor</a></li>
-                <li><a href="/adminAssignReq">Asignacion Req</a></li>
-            </ul>
-        </div>
-    </div>
-    -- >
-</nav>
--->
