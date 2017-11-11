@@ -65,6 +65,8 @@
 
                             <ul class="dropdown-menu">
                                 <li>
+                                    <a href="/userInfo">My Info</a>
+
                                     <a href="/logout" onclick="event.preventDefault(); $('#logout-form').submit();">
                                         Logout
                                     </a>

@@ -33,6 +33,12 @@ Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 //User routes
 Route::get('/user', 'UserController@index');
 
+Route::get('/userInfo', 'UserController@showUserInfo');
+Route::get('/modify-user-info', 'UserController@userInfoForm');
+Route::post('/modify-user-info', 'UserController@modifyUserInfo')->name('modifyUserInfo');
+Route::get('/change-password', 'UserController@changePasswordForm');
+Route::post('/change-password', 'UserController@changePassword')->name('changePassword');
+
 
 //Admin routes
 Route::get('/admin/home', 'AdminController@index');
