@@ -55,4 +55,8 @@ class User extends Authenticatable
 
         return false;
     }
+
+    public function tickets(){
+        return $this->hasMany('App\Ticket', 'user_id', 'id');
+    }
 }

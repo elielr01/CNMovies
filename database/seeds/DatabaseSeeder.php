@@ -3,6 +3,8 @@
 use Illuminate\Database\Seeder;
 use App\User;
 use Carbon\Carbon;
+use App\Screen;
+use App\Customer;
 
 class DatabaseSeeder extends Seeder
 {
@@ -308,6 +310,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180, // This would have to change dinamically according to movie duration
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     14, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -316,6 +319,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     17, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -324,6 +328,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     20, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             /* Screen 2 */
@@ -333,6 +338,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     14, 30, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -341,6 +347,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     17, 30, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -349,6 +356,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     20, 30, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             /* Screen 3 */
@@ -358,6 +366,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     15, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -366,6 +375,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     18, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -374,6 +384,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     21, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             /* Functions for CNM Nuevo Sur */
@@ -384,6 +395,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     15, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -392,6 +404,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     18, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -400,6 +413,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     21, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             /* Screen 2 */
@@ -409,6 +423,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     14, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -417,6 +432,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     17, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -425,6 +441,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     20, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             /* Screen 3 */
@@ -434,6 +451,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     16, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -442,6 +460,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     19, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -450,6 +469,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     22, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             /* Functions for CNM Esfera */
@@ -460,6 +480,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     14, 30, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -468,6 +489,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     17, 30, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -476,6 +498,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     20, 30, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             /* Screen 2 */
@@ -485,6 +508,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     15, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -493,6 +517,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     18, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -501,6 +526,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     21, 0, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             /* Screen 3 */
@@ -510,6 +536,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     15, 30, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -518,6 +545,7 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     18, 30, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ],
             [
@@ -526,11 +554,38 @@ class DatabaseSeeder extends Seeder
                 'duration' => 180,
                 'starting_hour' => Carbon::create(2017, 11, 13,
                     21, 30, 0, 'America/Monterrey'),
+                'price' => 50,
                 'is_active' => 1
             ]
         ];
 
         DB::table('cinema_functions')->insert($cinema_funcs);
+
+        /* Creation of Seats */
+        $screens = Screen::all();
+
+        foreach ($screens as $screen){
+            for($seat_letter = 'A'; $seat_letter <= 'J'; $seat_letter++){
+                for ($seat_number = 1; $seat_number <= 12; $seat_number++){
+                    DB::table('seats')->insert([
+                        'screen_id' => $screen->screen_id,
+                        'number' => $seat_letter . $seat_number
+                    ]);
+                }
+            }
+        }
+
+        /* Creation of some tickets */
+
+        DB::table('tickets')->insert([
+           'user_id' => 6,
+            'cinema_function_id' => 1,
+            'seat_id' => 1,
+            'subtotal' => 50,
+            'total' => 50,
+            'created_at' => Carbon::now()
+        ]);
+
 
     }
 }

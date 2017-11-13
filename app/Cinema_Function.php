@@ -17,6 +17,7 @@ class Cinema_Function extends Model
         'screen_id',
         'duration',
         'starting_hour',
+        'price',
         'is_active'
     ];
 
@@ -31,5 +32,9 @@ class Cinema_Function extends Model
 
     public function screen(){
         return $this->belongsTo('App\Screen', 'screen_id', 'screen_id');
+    }
+
+    public function tickets(){
+        return $this->hasMany('App\Ticket', 'cinema_function_id', 'cinema_function_id');
     }
 }

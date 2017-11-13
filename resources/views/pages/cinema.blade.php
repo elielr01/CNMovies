@@ -50,7 +50,9 @@
 
                             @foreach($cinema_funcs as $cinema_func)
                                 @if($cinema_func->movie_id == $movie->movie_id)
-                                    <a href="#">{{Carbon\Carbon::parse($cinema_func->starting_hour)->format('H:i')}}</a>
+                                    <a href="/choose-seat?id={{$cinema_func->cinema_function_id}}">
+                                        {{Carbon\Carbon::parse($cinema_func->starting_hour)->format('H:i')}}
+                                    </a>
                                 @endif
                             @endforeach
                         </p>

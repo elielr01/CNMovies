@@ -36,6 +36,9 @@ Route::post('/modify-user-info', 'UserController@modifyUserInfo')->name('modifyU
 Route::get('/change-password', 'UserController@changePasswordForm');
 Route::post('/change-password', 'UserController@changePassword')->name('changePassword');
 
+Route::get('/choose-seat', 'PurchaseController@showSeats');
+Route::post('/checkout', 'PurchaseController@showCheckout');
+
 
 //Admin routes
 Route::get('/admin/home', 'AdminController@index');

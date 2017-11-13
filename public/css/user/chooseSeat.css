@@ -1,0 +1,113 @@
+.content-container{
+    padding: 30px 20px;
+}
+
+.movie-img-container{
+    width:269.6px;
+    height: 400px;
+    display: block;
+}
+
+.movie-img{
+    width: 269.6px;
+    height: 400px;
+}
+
+.seat-img{
+    width: 48px;
+    height: 48px;
+}
+
+#movie-container{
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
+}
+
+#seats-container{
+    overflow: scroll;
+}
+
+#seats{
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+    width:840px;
+}
+
+.seat-row > h3{
+    display: inline-block;
+}
+
+.seat-number-header{
+    display: inline-block;
+}
+
+#left-seats-header{
+    margin-left: 35px;
+}
+
+#left-seats-header > h3 {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 15px;
+
+}
+
+#right-seats-header {
+    margin-left: 58px;
+}
+
+#right-seats-header > h3 {
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 15px;
+
+}
+
+#central-seats-header {
+    margin-left: 55px;
+}
+
+#central-seats-header > h3 {
+    display: inline-block;
+    margin-left: 18px;
+    margin-right: 16px;
+}
+
+#left-seats{
+    margin-right: 20px;
+    margin-left: 20px;
+    width:161px;
+
+    display: inline-block;
+}
+
+#central-seats{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 325px;
+
+    display: inline-block;
+}
+
+#right-seats{
+    margin-left: 20px;
+    width: 161px;
+
+    display: inline-block;
+}
+
+.seat-btn{
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+#checkout-btn{
+    margin:10px;
+}

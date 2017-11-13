@@ -19,6 +19,7 @@ class CreateCinemaFunctionsTable extends Migration
             $table->unsignedInteger('screen_id');
             $table->unsignedInteger('duration');
             $table->dateTime('starting_hour');
+            $table->decimal('price');
             $table->boolean('is_active');
         });
 

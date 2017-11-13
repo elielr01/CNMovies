@@ -16,7 +16,7 @@
             <!-- Left side menu -->
             <ul class="nav navbar-nav">
                 <li><a href="/">Home <span class="sr-only">(current)</span></a></li>
-                <li><a href="/about-us">About Us</a></li>
+                <!--<li><a href="/about-us">About Us</a></li>-->
                 <!--<li><a href="/movies">Movies</a></li>-->
 
                 <li class="dropdown">
@@ -31,7 +31,7 @@
                     </ul>
                 </li>
 
-                <li><a href="/contact-us">Contact Us</a></li>
+                <!--<li><a href="/contact-us">Contact Us</a></li>-->
             </ul>
 
             <!-- Right side of the navbar -->
