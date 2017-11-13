@@ -18,7 +18,6 @@ Route::get('/signup', 'UserController@showSignUpForm');
 Route::post('/signup', 'UserController@signUp')->name('signup');
 
 
-
 //Login
 Route::get('/login', 'Auth\LoginController@showLoginForm');
 Route::post('/login', 'Auth\LoginController@login')->name('login');
@@ -27,8 +26,6 @@ Route::post('/login', 'Auth\LoginController@login')->name('login');
 //Logout
 Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 //----------------------------------------------------------------------------------------------------------------------
-
-
 
 //User routes
 Route::get('/user', 'UserController@index');
@@ -45,3 +42,7 @@ Route::get('/admin/home', 'AdminController@index');
 
 //Customer routes
 Route::get('/customer/home', 'CustomerController@index');
+
+
+// Public routes
+Route::get('/cinema', 'CinemaController@index');

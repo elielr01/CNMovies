@@ -17,14 +17,17 @@
             <ul class="nav navbar-nav">
                 <li><a href="/">Home <span class="sr-only">(current)</span></a></li>
                 <li><a href="/about-us">About Us</a></li>
-                <li><a href="/movies">Movies</a></li>
+                <!--<li><a href="/movies">Movies</a></li>-->
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CNM Cinemas <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">CNM Valle Oriente</a></li>
-                        <li><a href="#">CNM Nuevo Sur</a></li>
-                        <li><a href="#">CNM Esfera</a></li>
+                        @php
+                            $cinemas = \App\Cinema::all();
+                        @endphp
+                        @foreach($cinemas as $cinema)
+                            <li><a href="/cinema?name={{urlencode($cinema->name)}}">{{$cinema->name}}</a> </li>
+                        @endforeach
                     </ul>
                 </li>
 
