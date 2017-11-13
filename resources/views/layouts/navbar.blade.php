@@ -35,13 +35,13 @@
             </ul>
 
             <!-- Right side of the navbar -->
-            @if(isset($user))
-                @if($user->isAdmin())
+            @if(Auth::check())
+                @if(Auth::user()->isAdmin())
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                                aria-expanded="false">
-                                Hi, {{$user->firstname}} {{$user->lastname}}
+                                Hi, {{Auth::user()->firstname}} {{Auth::user()->lastname}}
                                 <span class="caret"></span>
                             </a>
 
@@ -57,12 +57,12 @@
                             </ul>
                         </li>
                     </ul>
-                @elseif($user->isCustomer())
+                @elseif(Auth::user()->isCustomer())
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-haspopup="true" aria-expanded="false">
-                                Hi, {{$user->firstname}} {{$user->lastname}}
+                                Hi, {{Auth::user()->firstname}} {{Auth::user()->lastname}}
                                 <span class="caret"></span>
                             </a>
 

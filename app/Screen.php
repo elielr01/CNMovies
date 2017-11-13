@@ -25,6 +25,7 @@ class Screen extends Model
     }
 
     public function cinema_functions(){
-        return $this->hasMany('App\Cinema_Function', 'screen_id', 'screen_id');
+        return $this->hasMany('App\Cinema_Function', 'screen_id', 'screen_id')
+            ->where('is_active', 1);
     }
 }

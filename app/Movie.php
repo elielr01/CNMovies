@@ -21,10 +21,11 @@ class Movie extends Model
         'img_name',
         'trailer_url',
         'storyline',
-        'is_premiere'
+        'is_premiere',
+        'is_active'
     ];
 
-    protected $primaryKey = 'customer_id';
+    protected $primaryKey = 'movie_id';
     public $timestamps = false;
 
     public function movieCategory() {
@@ -32,6 +33,7 @@ class Movie extends Model
     }
 
     public function cinemaFunctions(){
-        return $this->hasMany('App\Cinema_Function', 'movie_id', 'movie_id');
+        return $this->hasMany('App\Cinema_Function', 'movie_id', 'movie_id')
+            ->where('is_active', 1);
     }
 }

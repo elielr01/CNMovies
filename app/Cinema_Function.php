@@ -25,7 +25,8 @@ class Cinema_Function extends Model
     public $table = 'cinema_functions';
 
     public function movie() {
-        return $this->belongsTo('App\Movie', 'movie_id', 'movie_id');
+        return $this->belongsTo('App\Movie', 'movie_id', 'movie_id')
+            ->where('is_active', 1);
     }
 
     public function screen(){

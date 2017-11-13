@@ -24,6 +24,7 @@ class CreateMoviesTable extends Migration
             $table->string('trailer_url');
             $table->text('storyline');
             $table->boolean('is_premiere');
+            $table->boolean('is_active');
         });
 
         Schema::table('movies', function($table) {

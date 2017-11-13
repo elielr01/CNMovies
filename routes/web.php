@@ -46,3 +46,4 @@ Route::get('/customer/home', 'CustomerController@index');
 
 // Public routes
 Route::get('/cinema', 'CinemaController@index');
+Route::get('/movie', 'MovieController@index');

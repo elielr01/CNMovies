@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Doctrine\DBAL\Query\QueryBuilder;
+use Illuminate\Auth\EloquentUserProvider;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use App\Cinema;
 use App\Screen;
@@ -32,10 +35,11 @@ class CinemaController extends Controller
         $movies = [];
 
         foreach ($cinema_funcs as $cinema_func){
-            if (!in_array($cinema_func->movie, $movies)){
+            if (!in_array($cinema_func->movie, $movies) && $cinema_func->movie != null ){
                 $movies[] = $cinema_func->movie;
             }
         }
+
 
         return view('pages.cinema')
             ->with(['cinema' => $cinema, 'cinema_funcs' => $cinema_funcs, 'movies' => $movies]);

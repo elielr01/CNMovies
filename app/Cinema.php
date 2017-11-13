@@ -20,7 +20,7 @@ class Cinema extends Model
         'info'
     ];
 
-    protected $primaryKey = 'customer_id';
+    protected $primaryKey = 'cinema_id';
     public $timestamps = false;
 
     public function screens() {

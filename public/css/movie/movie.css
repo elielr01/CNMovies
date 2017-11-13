@@ -1,0 +1,58 @@
+.cinema-header{
+    padding-top: 20px;
+}
+
+.cinema-header > h1{
+    padding-left: 10px;
+}
+
+
+.movie-container{
+}
+
+.movie-img-container{
+    padding: 20px;
+    width: 390px;
+
+}
+
+.movie-image{
+    width: 350px;
+    height: 500px;
+
+}
+
+.movie-content-container {
+
+}
+
+.movie-container h1{
+    font-size: 250%;
+}
+
+.movie-container h2 {
+    font-size: 150%;
+}
+
+
+.movie-container a{
+    color: #FDFFFC;
+    text-decoration: underline;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#video {
+    /*
+    width: 854px;
+    height: 400px;
+     */
+    /*display: block;
+    min-width: 683px;
+    min-height: 320px;*/
+
+    width: 560px;
+    height: 315px;
+    display: block;
+
+}

@@ -1,0 +1,19 @@
+.movie-img-container{
+    background-color: red;
+    width:269.6px;
+    height: 400px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.movie-img{
+    transition: 0.7s;
+    width: 269.6px;
+    height: 400px;
+}
+
+.movie-img:hover{
+    transform:scale(1.06);
+    transition: 0.7s;
+    cursor: pointer;
+}

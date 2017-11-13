@@ -136,7 +136,8 @@ class DatabaseSeeder extends Seeder
                 'img_name' => 'coco.jpg',
                 'trailer_url' => 'http://www.imdb.com/videoembed/vi4249729305',
                 'storyline' => "Despite his family's baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history.",
-                'is_premiere' => 1
+                'is_premiere' => 1,
+                'is_active' => 1
 
             ],
             [
@@ -148,7 +149,8 @@ class DatabaseSeeder extends Seeder
                 'img_name' => 'logan.jpg',
                 'trailer_url' => 'http://www.imdb.com/videoembed/vi1946727961',
                 'storyline' => "In 2029 the mutant population has shrunken significantly and the X-Men have disbanded. Logan, whose power to self-heal is dwindling, has surrendered himself to alcohol and now earns a living as a chauffeur. He takes care of the ailing old Professor X whom he keeps hidden away. One day, a female stranger asks Logan to drive a girl named Laura to the Canadian border. At first he refuses, but the Professor has been waiting for a long time for her to appear. Laura possesses an extraordinary fighting prowess and is in many ways like Wolverine. She is pursued by sinister figures working for a powerful corporation; this is because her DNA contains the secret that connects her to Logan. A relentless pursuit begins - In this third cinematic outing featuring the Marvel comic book character Wolverine we see the superheroes beset by everyday problems. They are aging, ailing and struggling to survive financially. A decrepit Logan is forced to ask himself if he can or even wants to put his remaining powers to good use. It would appear that in the near-future, the times in which they were able put the world to rights with razor sharp claws and telepathic powers are now over.",
-                'is_premiere' => 0
+                'is_premiere' => 0,
+                'is_active' => 1
             ],
             [
                 'movie_category_id' => 3,
@@ -159,7 +161,8 @@ class DatabaseSeeder extends Seeder
                 'img_name' => 'wonderWoman.jpg',
                 'trailer_url' => 'http://www.imdb.com/videoembed/vi1553381657',
                 'storyline' => "Diana, princess of the Amazons, trained to be an unconquerable warrior. Raised on a sheltered island paradise, when a pilot crashes on their shores and tells of a massive conflict raging in the outside world, Diana leaves her home, convinced she can stop the threat. Fighting alongside man in a war to end all wars, Diana will discover her full powers and her true destiny.",
-                'is_premiere' => 0
+                'is_premiere' => 0,
+                'is_active' => 1
             ],
             [
                 'movie_category_id' => 3,
@@ -170,7 +173,8 @@ class DatabaseSeeder extends Seeder
                 'img_name' => 'thor.jpg',
                 'trailer_url' => 'http://www.imdb.com/videoembed/vi4010391833',
                 'storyline' => "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his homeworld and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela.",
-                'is_premiere' => 1
+                'is_premiere' => 1,
+                'is_active' => 1
             ],
             [
                 'movie_category_id' => 3,
@@ -181,7 +185,8 @@ class DatabaseSeeder extends Seeder
                 'img_name' => 'murderOrient.jpg',
                 'trailer_url' => 'http://www.imdb.com/videoembed/vi612153625',
                 'storyline' => "A lavish train ride unfolds into a stylish & suspenseful mystery. From the novel by Agatha Christie, Murder on the Orient Express tells of thirteen stranded strangers & one man's race to solve the puzzle before the murderer strikes again.",
-                'is_premiere' => 1
+                'is_premiere' => 1,
+                'is_active' => 1
             ],
             [
                 'movie_category_id' => 4,
@@ -192,7 +197,8 @@ class DatabaseSeeder extends Seeder
                 'img_name' => 'it.jpg',
                 'trailer_url' => 'http://www.imdb.com/videoembed/vi1396095257',
                 'storyline' => "In the Town of Derry, the local kids are disappearing one by one, leaving behind bloody remains. In a place known as 'The Barrens', a group of seven kids are united by their horrifying and strange encounters with an evil clown and their determination to kill It.",
-                'is_premiere' => 0
+                'is_premiere' => 0,
+                'is_active' => 1
             ],
             [
                 'movie_category_id' => 4,
@@ -203,7 +209,8 @@ class DatabaseSeeder extends Seeder
                 'img_name' => 'bladeRunner.jpg',
                 'trailer_url' => 'http://www.imdb.com/videoembed/vi3362371865',
                 'storyline' => "Thirty years after the events of the first film, a new blade runner, LAPD Officer K (Ryan Gosling), unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard (Harrison Ford), a former LAPD blade runner who has been missing for 30 years.",
-                'is_premiere' => 0
+                'is_premiere' => 0,
+                'is_active' => 1
             ],
             [
                 'movie_category_id' => 3,
@@ -214,7 +221,8 @@ class DatabaseSeeder extends Seeder
                 'img_name' => 'spiderman.jpg',
                 'trailer_url' => 'http://www.imdb.com/videoembed/vi4175083801',
                 'storyline' => "Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt May, under the watchful eye of his new mentor Tony Stark, Peter tries to fall back into his normal daily routine - distracted by thoughts of proving himself to be more than just your friendly neighborhood Spider-Man - but when the Vulture emerges as a new villain, everything that Peter holds most important will be threatened.",
-                'is_premiere' => 0
+                'is_premiere' => 0,
+                'is_active' => 1
             ],
             [
                 'movie_category_id' => 3,
@@ -225,7 +233,8 @@ class DatabaseSeeder extends Seeder
                 'img_name' => 'dunkirk.jpg',
                 'trailer_url' => 'http://www.imdb.com/videoembed/vi3402283289',
                 'storyline' => "Evacuation of Allied soldiers from Belgium, the British Empire, and France, who were cut off and surrounded by the German army from the beaches and harbor of Dunkirk, France, between May 26- June 04, 1940, during Battle of France in World War II.",
-                'is_premiere' => 0
+                'is_premiere' => 0,
+                'is_active' => 1
             ],
             [
                 'movie_category_id' => 3,
@@ -236,7 +245,8 @@ class DatabaseSeeder extends Seeder
                 'img_name' => 'guardiansGalaxy.jpg',
                 'trailer_url' => 'http://www.imdb.com/videoembed/vi3076896281',
                 'storyline' => "After saving Xandar from Ronan's wrath, the Guardians are now recognized as heroes. Now the team must help their leader Star Lord (Chris Pratt) uncover the truth behind his true heritage. Along the way, old foes turn to allies and betrayal is blooming. And the Guardians find that they are up against a devastating new menace who is out to rule the galaxy.",
-                'is_premiere' => 0
+                'is_premiere' => 0,
+                'is_active' => 1
             ]
         ];
 
