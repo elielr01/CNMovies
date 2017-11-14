@@ -123,10 +123,11 @@
                         </div>
 
                     </div>
-                    <button id="checkout-btn" class="btn btn-primary pull-right"
+                    <button class="btn btn-primary pull-right cnm-btn"
                             onclick="checkoutPost();">
                         Go To Checkout
                     </button>
+                    <a href="{{URL::previous()}}" class="btn btn-default pull-right cnm-btn">Go back</a>
                     <form method="POST" action="/checkout" id="checkoutForm">
                         {{csrf_field()}}
                         <input type="hidden" name="id" value="{{$cinema_func->cinema_function_id}}">

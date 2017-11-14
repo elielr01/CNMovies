@@ -44,4 +44,10 @@ class CinemaController extends Controller
         return view('pages.cinema')
             ->with(['cinema' => $cinema, 'cinema_funcs' => $cinema_funcs, 'movies' => $movies]);
     }
+
+    public function contactUs(){
+        $cinemas = Cinema::all();
+
+        return view('pages.contactUs')->with(['cinemas' => $cinemas]);
+    }
 }

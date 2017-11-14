@@ -5,6 +5,7 @@ use App\User;
 use Carbon\Carbon;
 use App\Screen;
 use App\Customer;
+use App\Admin;
 
 class DatabaseSeeder extends Seeder
 {
@@ -89,19 +90,19 @@ class DatabaseSeeder extends Seeder
         // Cinemas creation
         DB::table('cinemas')->insert([
             'name' => 'CNM Valle Oriente',
-            'address' => 'Av Lázaro Cárdenas 1000, Paseo de Las Privanzas, 64700 Monterrey, N.L.',
+            'address' => 'Galerias Valle Oriente. Av Lázaro Cárdenas 1000, Paseo de Las Privanzas, 64700 Monterrey, N.L.',
             'telephone' => '+52 (81) 2315 1011',
             'email' => 'valle.oriente@cnmovies.com',
         ]);
         DB::table('cinemas')->insert([
             'name' => 'CNM Nuevo Sur',
-            'address' => 'Avenida Revolución 2703, La Ladrillera, 64830 Monterrey, N.L.',
+            'address' => 'Nuevo Sur. Avenida Revolución 2703, La Ladrillera, 64830 Monterrey, N.L.',
             'telephone' => '+52 (81) 2222 2291',
             'email' => 'nuevo.sur@cnmovies.com',
         ]);
         DB::table('cinemas')->insert([
             'name' => 'CNM Esfera',
-            'address' => 'Av. La Rioja 245, Residencial la Rioja, 64985 Monterrey, N.L.',
+            'address' => 'Esfera City Center. Av. La Rioja 245, Residencial la Rioja, 64985 Monterrey, N.L.',
             'telephone' => '+52 (81) 2134 0200',
             'email' => 'esfera@cnmovies.com',
         ]);
@@ -586,6 +587,18 @@ class DatabaseSeeder extends Seeder
             'created_at' => Carbon::now()
         ]);
 
+        $user_eli = new User();
+        $user_eli->firstname = 'Emmanuel';
+        $user_eli->lastname = 'Romero';
+        $user_eli->email = 'eromero@cnm.com';
+        $user_eli->username = 'admin_eli';
+        $user_eli->password = bcrypt('admin');
+        $user_eli->type = "Admin";
+        $user_eli->save();
+
+        $admin_eli = new Admin();
+        $admin_eli->admin_id = $user_eli->id;
+        $admin_eli->added_by = 1;
 
     }
 }

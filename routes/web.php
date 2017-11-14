@@ -38,10 +38,15 @@ Route::post('/change-password', 'UserController@changePassword')->name('changePa
 
 Route::get('/choose-seat', 'PurchaseController@showSeats');
 Route::post('/checkout', 'PurchaseController@showCheckout');
+Route::post('/buyTicket', 'PurchaseController@buyTicket')->name('buyTickets');
+Route::get('/purchaseDone', 'PurchaseController@showPurchaseDone');
+
+Route::get('/my-tickets', 'UserController@showMyTickets');
 
 
 //Admin routes
-Route::get('/admin/home', 'AdminController@index');
+Route::get('/admin/', 'AdminController@index');
+Route::get('/admin/home', 'AdminController@home');
 
 //Customer routes
 Route::get('/customer/home', 'CustomerController@index');
@@ -50,3 +55,4 @@ Route::get('/customer/home', 'CustomerController@index');
 // Public routes
 Route::get('/cinema', 'CinemaController@index');
 Route::get('/movie', 'MovieController@index');
+Route::get('/contact-us', 'CinemaController@contactUs');

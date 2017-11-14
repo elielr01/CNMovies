@@ -31,7 +31,7 @@
                     </ul>
                 </li>
 
-                <!--<li><a href="/contact-us">Contact Us</a></li>-->
+                <li><a href="/contact-us">Contact Us</a></li>
             </ul>
 
             <!-- Right side of the navbar -->
@@ -46,6 +46,10 @@
                             </a>
 
                             <ul class="dropdown-menu">
+                                <li><a href="/userInfo">My Info</a></li>
+                                <li><a href="/my-tickets">My Tickets</a></li>
+                                <li><a href="/admin/home">Administration</a></li>
+
                                 <li>
                                     <a href="/logout" onclick="event.preventDefault(); $('#logout-form').submit();">
                                         Logout
@@ -67,9 +71,10 @@
                             </a>
 
                             <ul class="dropdown-menu">
-                                <li>
-                                    <a href="/userInfo">My Info</a>
+                                <li><a href="/userInfo">My Info</a></li>
+                                <li><a href="/my-tickets">My Tickets</a></li>
 
+                                <li>
                                     <a href="/logout" onclick="event.preventDefault(); $('#logout-form').submit();">
                                         Logout
                                     </a>

@@ -1,0 +1,32 @@
+.cnm-btn {
+    margin: 10px;
+}
+
+.cnm-table{
+    border-radius: 5px;
+    color:#FDFFFC;
+    background-color: #3A7CA5;
+}
+
+.cnm-table th {
+    background-color: #2f6690;;
+    color:#FDFFFC;
+}
+
+.cnm-table th:first-child {
+    border-radius: 5px 0px 0px 0px;
+}
+
+.cnm-table th:last-child{
+    border-radius: 0px 5px 0px 0px;
+}
+
+.cnm-table tr:nth-child(odd) {
+    background-color: #81C3D7;
+    color: #FDFFFC;
+}
+
+.cnm-table tr:nth-child(even) {
+    color:#FDFFFC;
+    background-color: #3A7CA5;
+}

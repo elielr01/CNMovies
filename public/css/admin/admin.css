@@ -1,0 +1,26 @@
+#admin-menu{
+    background-color: #3A7CA5;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#admin-menu li{
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    margin: 0px;
+}
+
+#admin-menu li:first-child{
+    border-top: 1px solid;
+}
+
+#admin-menu a{
+    color: #FDFFFC;
+}
+
+#admin-menu a:hover{
+    background-color: #FDFFFC;
+    color: #16425B;
+}

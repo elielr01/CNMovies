@@ -22,11 +22,13 @@ class UserController extends Controller
         }
 
         if ($user->isAdmin()) {
-            return redirect('/admin/home');
+            return redirect('/admin/');
         }
     }
 
     public function showSignUpForm() {
+        if (Auth::check())
+            return redirect('/');
         return view('pages.signup');
     }
 
@@ -81,7 +83,7 @@ class UserController extends Controller
         // Finally we do login
         Auth::login($user);
 
-        return redirect('/');
+        //return redirect()->back()->with('success', "Congrats! You're now a user!");
     }
 
     public function showUserInfo(){
@@ -192,5 +194,16 @@ class UserController extends Controller
         }
         else
             return redirect('/signup');
+    }
+
+    public function showMyTickets(){
+
+        if (Auth::guest())
+            return redirect('/signup');
+
+        $user = Auth::user();
+        $tickets = $user->tickets;
+
+        return view('pages.user.myTickets')->with(['user' => $user, 'tickets' => $tickets]);
     }
 }

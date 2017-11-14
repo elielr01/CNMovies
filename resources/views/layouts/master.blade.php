@@ -16,10 +16,21 @@
                         {{ session('success') }}
                     </div>
                 @endif
+                @if(isset($success))
+                    <div class="alert alert-success">
+                        {{ $success }}
+                    </div>
+                @endif
 
                 @if (session('fail'))
                     <div class="alert alert-danger">
                         {{ session('fail') }}
+                    </div>
+                @endif
+
+                @if(isset($fail))
+                    <div class="alert alert-danger">
+                        {{ $fail }}
                     </div>
                 @endif
             </div>

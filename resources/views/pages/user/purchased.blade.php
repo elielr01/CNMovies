@@ -1,20 +1,20 @@
 @extends('layouts.master')
 
-@section('title', 'CNMovies - Checkout')
+@section('title', 'CNMovies - Tickets Buyed')
 
 @section('navbar')
     @include('layouts.navbar')
 @endsection
 
 @section('custom_css')
-    <link href="{{ asset('css/user/checkout.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/user/purchased.css') }}" rel="stylesheet" type="text/css">
 @endsection
 
 @section('content')
 
     <div class="row">
         <div class="col-md-12 content-container">
-            <h1>Checkout</h1>
+            <h1>Tickets Buyed</h1>
 
             <div class="row movie-container">
                 <div class="col-md-4 movie-img-container">
@@ -34,21 +34,8 @@
                     </p>
                     <h2>Total: ${{number_format($total, 2)}}</h2>
 
-                    <a href="/choose-seat" class="btn btn-default cnm-btn" onclick="event.preventDefault(); $('#backForm').submit();">Go Back</a>
-                    <a href="/buyTickets" class="btn btn-primary cnm-btn" onclick="event.preventDefault(); $('#buyForm').submit();">Buy tickets</a>
+                    <a href="/" class="btn btn-primary">Return to Home</a>
 
-                    <form method="POST" action="{{route('buyTickets')}}" id="buyForm">
-                        {{csrf_field()}}
-                        <input type="hidden" name="id" value="{{$cinema_func->cinema_function_id}}"/>
-                        @foreach($seats as $seat)
-                            <input type="hidden" name="seats[]" value="{{$seat}}">
-                        @endforeach
-                    </form>
-
-                    <form method="GET" action="/choose-seat" id="backForm">
-                        {{csrf_field()}}
-                        <input type="hidden" name="id" value="{{$cinema_func->cinema_function_id}}"/>
-                    </form>
 
                 </div>
             </div>
